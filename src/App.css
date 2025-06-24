@@ -1,42 +1,168 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 128px 0px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container__card {
+  background-color: white;
+  padding: 40px;
+  min-width: 736px;
+  max-width: 736px;
+  border-radius: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__image {
+  width: 100%;
+  border-radius: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card__section {
+  margin: 16px 0px;
 }
 
-.card {
-  padding: 2em;
+.section__title {
+  font-size: 40px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.read-the-docs {
-  color: #888;
+.section__description {
+  font-size: 16px;
+  color: #5f564d;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section__preparation {
+  background-color: #fff7fb;
+  padding: 24px;
+  border-radius: 12px;
+}
+.preparation__title {
+  font-size: 20px;
+  color: #7a284e;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.preparation__list::marker {
+  color: #7a284e;
+}
+
+.preparation__list {
+  color: #5f564d;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 8px 0px;
+}
+.section__ingredients {
+}
+
+.ingredients__title {
+  color: #854632;
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients__list {
+  font-size: 16px;
+  color: #5f564d;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ingredients__list::marker {
+  color: #854632;
+}
+
+.section__intructions {
+}
+
+.intructions__title {
+  color: #854632;
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intructions__list::marker {
+  color: #854632;
+}
+
+.intructions__list {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #5f564d;
+}
+
+.section__line {
+  border-top: 1px solid #e3ddd7;
+  width: 100%;
+}
+
+.section__nutrition {
+}
+
+.nutrition__title {
+  color: #854632;
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nutrition__description {
+  font-size: 16px;
+  color: #5f564d;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nutrition_table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e3ddd7;
+}
+
+.nutrition__row {
+  border-bottom: 1px solid #e3ddd7;
+}
+
+.nutrition__column__name {
+  padding: 16px;
+  font-size: 16px;
+  color: #5f564d;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nutrition__column__porcentaje {
+  padding: 16px;
+  color: #854632;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

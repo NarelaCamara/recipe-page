@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import viteLogo from "./assets/food.avif";
+import { Card } from "./component/card/card";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const food = {
+    name: "Simple Omelette Recipe",
+    image: viteLogo,
+    description:
+      "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+    preparation: {
+      total: "Approximately 10 minutes",
+      preparation: "5 minutes",
+      cooking: "5 minutes",
+    },
+
+    ingredents: ["2-3 large eggs"],
+    instructions: [
+      {
+        title: "Beat the eggs",
+        description:
+          "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+      },
+    ],
+    nutrition: [
+      { name: "Calories", porcentaje: "277kcal" },
+      { name: "Calories", porcentaje: "277kcal" },
+    ],
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container">
+      <Card food={food} />
+    </div>
+  );
 }
 
-export default App
+export default App;
