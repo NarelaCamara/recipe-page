@@ -33,9 +33,9 @@ export const Card = ({ food }: { food: IFood }) => {
 
         <div className="section__ingredients">
           <h3 className="ingredients__title">Ingredients</h3>
-          <ul>
+          <ul className="ingredients__list">
             {food.ingredents.map((e) => (
-              <li className="ingredients__list">{e}</li>
+              <li className="ingredients__item">{e}</li>
             ))}
           </ul>
         </div>
@@ -43,9 +43,9 @@ export const Card = ({ food }: { food: IFood }) => {
 
         <div className="section__intructions">
           <h3 className="intructions__title">Intructions</h3>
-          <ol>
+          <ol className="intructions__list">
             {food.instructions.map((e) => (
-              <li className="intructions__list">
+              <li className="intructions__item">
                 <b>{e.title}: </b>
                 {e.description}
               </li>
