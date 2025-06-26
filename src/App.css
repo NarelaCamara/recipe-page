@@ -2,15 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 128px 0px;
+  min-height: 100%;
+  padding: 8rem 0px;
 }
 
 .container__card {
   background-color: white;
   padding: 40px;
-  min-width: 736px;
-  max-width: 736px;
+  min-width: 46rem;
+  max-width: 46rem;
   border-radius: 24px;
 }
 
@@ -144,6 +144,10 @@
   color: #e3ddd7;
 }
 
+.nutrition_table tr:last-child {
+  border-bottom: none;
+}
+
 .nutrition__row {
   border-bottom: 1px solid #e3ddd7;
 }
@@ -165,4 +169,44 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/************************************************************************************************************************************/
+
+@media (max-width: 1024px) {
+  /* Estilos para pantallas con un ancho máximo de 768px (generalmente tablets ) */
+  .container__card {
+    min-width: 30rem;
+    max-width: 30rem;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Estilos para pantallas con un ancho máximo de 360px ( móviles) */
+
+  .container {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .container__card {
+    position: relative;
+    top: -10px;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0px;
+    border-radius: 0%;
+  }
+
+  .card__image {
+    width: 100%;
+    border-radius: 0%;
+    position: relative;
+    top: 0%;
+  }
+
+  .card__section {
+    padding: 0px 2rem;
+  }
 }
